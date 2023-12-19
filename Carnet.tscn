@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0k8komsbx2oe"]
+
+[ext_resource type="Texture2D" uid="uid://b0mj0diqc0aku" path="res://notebook-with-blank-paper-sheet-free-png.png" id="1_l7hot"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6xk7s"]
+size = Vector2(384, 650)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(960, 325)
+shape = SubResource("RectangleShape2D_6xk7s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(944, 328)
+scale = Vector2(0.654082, 0.743878)
+texture = ExtResource("1_l7hot")
