@@ -1,8 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3040weor37fb"]
+[gd_scene load_steps=4 format=3 uid="uid://c3040weor37fb"]
 
+[ext_resource type="Script" path="res://main.gd" id="1_cekwp"]
 [ext_resource type="PackedScene" uid="uid://cmquqf3lqilqu" path="res://Objets.tscn" id="1_u1pr7"]
+[ext_resource type="PackedScene" uid="uid://dhwyxhpy33sor" path="res://Textbox.tscn" id="3_7wb8n"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_cekwp")
 
 [node name="Node2D" parent="." instance=ExtResource("1_u1pr7")]
 position = Vector2(149, 172)
+
+[node name="TextBox" parent="." instance=ExtResource("3_7wb8n")]
+offset_left = -20.0
+offset_top = -1.0
+offset_right = -20.0
+offset_bottom = -1.0
+
+[connection signal="clicked_on_object" from="Node2D" to="." method="_on_node_2d_clicked_on_object"]

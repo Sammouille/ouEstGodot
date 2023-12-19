@@ -2,6 +2,9 @@ extends Node2D
 
 var pickable:bool = false
 
+signal clicked_on_object
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -11,7 +14,7 @@ func _ready():
 func _process(_delta):
 	if pickable:
 		if Input.is_action_just_pressed("ui_click"):
-			print("Objet cliqué !")
+			clicked_on_object.emit()
 
 
 func _on_mouse_entered():
