@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dkr47b4fqcacp"]
+[gd_scene load_steps=4 format=3 uid="uid://umx1tlod3g6m"]
 
-[ext_resource type="FontFile" uid="uid://dn533augn832y" path="res://JustAnotherHand-Regular.ttf" id="1_h115r"]
-[ext_resource type="Texture2D" uid="uid://b87k2bi7fncfe" path="res://flèche.png" id="2_ss485"]
+[ext_resource type="FontFile" uid="uid://dn533augn832y" path="res://JustAnotherHand-Regular.ttf" id="1_n7yy7"]
+[ext_resource type="Texture2D" uid="uid://b87k2bi7fncfe" path="res://flèche.png" id="2_g3bpf"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8dir4"]
 
@@ -17,18 +17,18 @@ offset_top = 36.0
 offset_right = 245.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_h115r")
+theme_override_fonts/font = ExtResource("1_n7yy7")
 theme_override_font_sizes/font_size = 30
-text = "C’est ce que mange Godot tous les matins..."
+text = "C'est sûrement celui de Godot ..."
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
 offset_right = 178.0
 offset_bottom = 41.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_h115r")
+theme_override_fonts/font = ExtResource("1_n7yy7")
 theme_override_font_sizes/font_size = 40
-text = "J'ai trouvé un oignon."
+text = "J'ai trouvé un crâne."
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 0
@@ -36,5 +36,5 @@ offset_left = 19.0
 offset_top = 32.0
 offset_right = 45.0
 offset_bottom = 58.0
-texture = ExtResource("2_ss485")
+texture = ExtResource("2_g3bpf")
 expand_mode = 1
