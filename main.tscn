@@ -1,11 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3040weor37fb"]
+[gd_scene load_steps=7 format=3 uid="uid://c3040weor37fb"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_cekwp"]
-[ext_resource type="PackedScene" uid="uid://cmquqf3lqilqu" path="res://Objets.tscn" id="1_u1pr7"]
+[ext_resource type="PackedScene" uid="uid://cmquqf3lqilqu" path="res://Interactible.tscn" id="1_u1pr7"]
 [ext_resource type="PackedScene" uid="uid://dhwyxhpy33sor" path="res://Textbox.tscn" id="3_7wb8n"]
+[ext_resource type="Texture2D" uid="uid://bnhv50pisbar3" path="res://Placeholder/981.jpeg" id="4_853f6"]
+[ext_resource type="Texture2D" uid="uid://dmivbcgv5xgbk" path="res://Placeholder/cotik_npc_alsanna.png" id="5_jeukj"]
 
-[node name="Main" type="Node2D"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_2ptr4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_853f6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jeukj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("sprite")]
 script = ExtResource("1_cekwp")
+sprite = NodePath("AnimatedSprite2D")
 
 [node name="Node2D" parent="." instance=ExtResource("1_u1pr7")]
 position = Vector2(149, 172)
@@ -15,5 +32,8 @@ offset_left = -20.0
 offset_top = -1.0
 offset_right = -20.0
 offset_bottom = -1.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2ptr4")
 
 [connection signal="clicked_on_object" from="Node2D" to="." method="_on_node_2d_clicked_on_object"]
