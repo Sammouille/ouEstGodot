@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://23qcrcuks50a"]
+[gd_scene load_steps=6 format=3 uid="uid://23qcrcuks50a"]
 
 [ext_resource type="Script" path="res://Objets.gd" id="1_c3n1t"]
+[ext_resource type="Texture2D" uid="uid://bnhv50pisbar3" path="res://Placeholder/981.jpeg" id="2_o7eie"]
+[ext_resource type="Texture2D" uid="uid://cwk2ibdu4osc0" path="res://Placeholder/Asset_Ou_est_Godot.png" id="3_ci34p"]
+[ext_resource type="Texture2D" uid="uid://dmivbcgv5xgbk" path="res://Placeholder/cotik_npc_alsanna.png" id="4_kix2n"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1as40"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_o7eie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ci34p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kix2n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_c3n1t")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1as40")

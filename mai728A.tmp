@@ -11,6 +11,12 @@
 script = ExtResource("1_cekwp")
 sprite = NodePath("AnimatedSprite2D")
 
+[node name="TextBox" parent="." instance=ExtResource("3_7wb8n")]
+offset_left = -20.0
+offset_top = -1.0
+offset_right = -20.0
+offset_bottom = -1.0
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_egqih")
 
@@ -20,44 +26,10 @@ position = Vector2(149, 172)
 [node name="PNJ1" parent="." instance=ExtResource("1_u1pr7")]
 position = Vector2(570.57, 166.009)
 
-[node name="Scene" type="Sprite2D" parent="."]
-z_index = -2
-position = Vector2(863, 483)
-scale = Vector2(0.453034, 0.375294)
+[node name="Export202312201128598280-1" type="Sprite2D" parent="."]
+position = Vector2(577.5, 326.5)
+scale = Vector2(0.303694, 0.25451)
 texture = ExtResource("4_xmw5m")
-
-[node name="TextBox" parent="." instance=ExtResource("3_7wb8n")]
-offset_left = 328.0
-offset_top = 273.0
-offset_right = 865.0
-offset_bottom = 692.0
-
-[node name="Mask_smile" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(883, 178)
-
-[node name="Mask_sad" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(1124, 194)
-
-[node name="Skull" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(428, 407)
-
-[node name="Flower" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(799, 472)
-
-[node name="Onions" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(1280, 436)
-
-[node name="Node2D6" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(146, 410)
-
-[node name="Node2D7" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(622, 422)
-
-[node name="Node2D8" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(1012, 443)
-
-[node name="Node2D9" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(1541, 281)
 
 [connection signal="clicked_on_object" from="Porte" to="." method="_on_node_2d_clicked_on_object"]
 [connection signal="clicked_on_object" from="PNJ1" to="." method="_on_pnj_1_clicked_on_object"]

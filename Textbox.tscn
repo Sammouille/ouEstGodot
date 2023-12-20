@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://dhwyxhpy33sor"]
+[gd_scene load_steps=2 format=3 uid="uid://dhwyxhpy33sor"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ixf5y"]
+font_size = 50
+font_color = Color(0.807843, 0.807843, 0.807843, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,7 +14,25 @@ grow_vertical = 2
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 53.0
-offset_top = 357.0
-offset_right = 1131.0
-offset_bottom = 631.0
+offset_left = 38.0
+offset_top = 362.0
+offset_right = 1116.0
+offset_bottom = 636.0
+
+[node name="Description" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 93.0
+offset_top = 95.0
+offset_right = 984.0
+offset_bottom = 178.0
+
+[node name="Nom" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.019
+anchor_bottom = 0.042
+offset_left = 22.0
+offset_top = 16.0
+offset_right = 217.518
+offset_bottom = 73.492
+label_settings = SubResource("LabelSettings_ixf5y")

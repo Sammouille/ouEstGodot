@@ -1,4 +1,24 @@
-Bonjour
-Como estas ?
-Gambate !
-Orfiderzen
+Crâne Piste du meurtre 
+“Un crâne ! C’est sûrement celui de Godot!”
+Pop Corn Débloque dialogue 
+“Du pop corn.”
+Oignon Piste du petit déjeuner 
+“C’est ce que mange Godot tous les matins.”
+Couteau Piste du meurtre 
+“Seigneur, du sang! Sûrement​ celui de Godot.”
+Chapeau haut de forme Piste de la Drag Queen 
+“Godot est une véritable Drag Queen. Il sait toujours comment mettre le feu à la scène, il est peut-être là-bas.”
+Jumelles Piste du stalker
+“Quelqu’un le suit de très près on dirait. Qui cela peut-il bien être?”
+Pingouin Piste du contrebandier 
+“Glaçoune!! Salaud d’contrebandiers!
+Vin Piste du décuvage en coulisse 
+“Haa, sacré Godot. Il est allé décuver en coulisse, comme d’habitude.”
+Bouquet de fleur Piste du fleuriste 
+“Cette composition est tout à fait splendide. Godot à toujours sû être très créatif. Il a dû partir réaliser son rêve : devenir fleuriste.”
+Chamallow sur pique Piste du feu de camp 
+“Que de bons souvenirs… “Rocket Science and Marshmallows”.”
+Menotte en fourrure Piste de l’objet préféré 
+“C’est l’objet favori de Godot. Qu’est-ce qu’il fait là? Habituellement il est toujours près de lui.”
+Joconde Piste de sa mère 
+“Haa, la mère de Godot… C’est de toute beauté.”
