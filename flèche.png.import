@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5cjh3xrwgra4"
-path="res://.godot/imported/notebook-with-blank-paper-sheet-free-png.png-9ec8903a2b0ada21f6fe250974d3d228.ctex"
+uid="uid://b87k2bi7fncfe"
+path="res://.godot/imported/flèche.png-af7a252456e55c3365d542cf7a1e9055.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://notebook-with-blank-paper-sheet-free-png.png"
-dest_files=["res://.godot/imported/notebook-with-blank-paper-sheet-free-png.png-9ec8903a2b0ada21f6fe250974d3d228.ctex"]
+source_file="res://flèche.png"
+dest_files=["res://.godot/imported/flèche.png-af7a252456e55c3365d542cf7a1e9055.ctex"]
 
 [params]
 

@@ -1,17 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0k8komsbx2oe"]
+[gd_scene load_steps=3 format=3 uid="uid://dbbc7i8y6xd6v"]
 
-[ext_resource type="Texture2D" uid="uid://b0mj0diqc0aku" path="res://notebook-with-blank-paper-sheet-free-png.png" id="1_l7hot"]
+[ext_resource type="Texture2D" uid="uid://5cjh3xrwgra4" path="res://notebook-with-blank-paper-sheet-free-png.png" id="1_df5q1"]
+[ext_resource type="PackedScene" uid="uid://jr6n3hog1aqu" path="res://notes_journal/note_journal.tscn" id="2_27sx5"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6xk7s"]
-size = Vector2(384, 650)
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Area2D" type="Area2D"]
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 496.0
+offset_bottom = 1080.0
+texture = ExtResource("1_df5q1")
+expand_mode = 1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(960, 325)
-shape = SubResource("RectangleShape2D_6xk7s")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(944, 328)
-scale = Vector2(0.654082, 0.743878)
-texture = ExtResource("1_l7hot")
+[node name="Panel" parent="TextureRect" instance=ExtResource("2_27sx5")]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 107.0
+offset_right = 309.0
+offset_bottom = 173.0
