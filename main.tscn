@@ -2,14 +2,10 @@
 
 [ext_resource type="Script" path="res://main.gd" id="1_cekwp"]
 [ext_resource type="PackedScene" uid="uid://cmquqf3lqilqu" path="res://Interactible.tscn" id="1_u1pr7"]
-
 [ext_resource type="Texture2D" uid="uid://cfb841b2bgy5e" path="res://Assets/Skull.png" id="2_3vf4a"]
 [ext_resource type="Texture2D" uid="uid://cmi51pwiw3r36" path="res://Assets/Popcorn.png" id="3_6ikva"]
-[ext_resource type="PackedScene" uid="uid://dhwyxhpy33sor" path="res://Textbox.tscn" id="3_7wb8n"]
-[ext_resource type="Texture2D" uid="uid://07gb81rlbin8" path="res://Assets/Onion.png" id="4_p4cq5"]
-
 [ext_resource type="PackedScene" uid="uid://dhwyxhpy33sor" path="res://Indice.tscn" id="3_7wb8n"]
-
+[ext_resource type="Texture2D" uid="uid://07gb81rlbin8" path="res://Assets/Onion.png" id="4_p4cq5"]
 [ext_resource type="Texture2D" uid="uid://bgrhrh5ftpgsl" path="res://Assets/export202312201128598280-1.png" id="4_xmw5m"]
 [ext_resource type="Texture2D" uid="uid://bux52l3mxu0le" path="res://Assets/Knife.png" id="5_gqn63"]
 [ext_resource type="Texture2D" uid="uid://k4sq86dfxnle" path="res://Assets/Hat.png" id="6_jfjt4"]
@@ -96,14 +92,6 @@ position = Vector2(959, 537)
 scale = Vector2(0.504617, 0.422941)
 texture = ExtResource("4_xmw5m")
 
-[node name="TextBox" parent="." instance=ExtResource("3_7wb8n")]
-visible = false
-z_index = 1
-offset_left = 328.0
-offset_top = 273.0
-offset_right = 865.0
-offset_bottom = 692.0
-
 [node name="PNJ1" parent="." instance=ExtResource("1_u1pr7")]
 position = Vector2(571, 84)
 scale = Vector2(0.5, 0.5)
@@ -188,6 +176,13 @@ scale = Vector2(0.1, 0.1)
 position = Vector2(84, 846)
 rotation = -1.22173
 scale = Vector2(0.1, 0.1)
+
+[node name="TextBox" parent="." instance=ExtResource("3_7wb8n")]
+visible = false
+offset_left = -17.0
+offset_top = -6.0
+offset_right = -17.0
+offset_bottom = -6.0
 
 [connection signal="clicked_on_object" from="PNJ1" to="." method="_on_pnj_1_clicked_on_object"]
 [connection signal="clicked_on_object" from="Porte" to="." method="_on_node_2d_clicked_on_object"]

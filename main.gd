@@ -40,7 +40,6 @@ func _process(_delta):
 		$AnimatedSprite2D.visible = false
 		$TextBox.visible = false
 
-
 func make_sprite_and_textbox_visible():
 	$AnimatedSprite2D.visible = true
 	$TextBox.visible = true
@@ -49,7 +48,7 @@ func _on_node_2d_clicked_on_object():
 	make_sprite_and_textbox_visible()
 	$TextBox/Panel/Nom.text = text_tab[0]
 	$TextBox/Panel/Description.text = text_tab[1]
-	
+
 
 func _on_pnj_1_clicked_on_object():
 	pass
@@ -96,7 +95,7 @@ func _on_glacoun_clicked_on_object():
 	make_sprite_and_textbox_visible()
 	$TextBox/Panel/Nom.text = text_tab[12]
 	$TextBox/Panel/Description.text = text_tab[13]
-	
+
 	$AnimatedSprite2D.frame = 6
 
 func _on_handcuff_clicked_on_object():
