@@ -1,16 +1,29 @@
 [gd_scene load_steps=5 format=3 uid="uid://jr6n3hog1aqu"]
 
 [ext_resource type="FontFile" uid="uid://dn533augn832y" path="res://JustAnotherHand-Regular.ttf" id="1_lw4mb"]
-[ext_resource type="Script" path="res://panel_text.gd" id="1_vbfjt"]
 [ext_resource type="Texture2D" uid="uid://b87k2bi7fncfe" path="res://flèche.png" id="2_0ca1u"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8dir4"]
+
+[sub_resource type="GDScript" id="GDScript_2nvr5"]
+script/source = "extends Panel
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [node name="entrée_de_journal" type="Panel"]
 offset_right = 274.0
 offset_bottom = 66.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_8dir4")
-script = ExtResource("1_vbfjt")
+script = SubResource("GDScript_2nvr5")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
