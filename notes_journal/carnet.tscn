@@ -1,8 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://dbbc7i8y6xd6v"]
+[gd_scene load_steps=17 format=3 uid="uid://dbbc7i8y6xd6v"]
 
 [ext_resource type="Script" path="res://notes_journal/carnet.gd" id="1_7481h"]
 [ext_resource type="Texture2D" uid="uid://dqe7lnopucjho" path="res://notes_journal/journal.png" id="1_mjsox"]
-[ext_resource type="PackedScene" uid="uid://jr6n3hog1aqu" path="res://notes_journal/note_journal.tscn" id="2_27sx5"]
+[ext_resource type="PackedScene" uid="uid://drkypstj5th7a" path="res://notes_journal/note_cham.tscn" id="3_hj3ja"]
+[ext_resource type="PackedScene" uid="uid://pmsvaevp8uhu" path="res://notes_journal/note_couteau.tscn" id="4_625nv"]
+[ext_resource type="PackedScene" uid="uid://b8ojcjsx47rlk" path="res://notes_journal/note_crane.tscn" id="5_iy0gs"]
+[ext_resource type="PackedScene" uid="uid://cnlvh2x574yln" path="res://notes_journal/note_fleurs.tscn" id="6_ekmbc"]
+[ext_resource type="PackedScene" uid="uid://2mejdwt4n8dd" path="res://notes_journal/note_glacoune.tscn" id="7_p0vir"]
+[ext_resource type="PackedScene" uid="uid://wwue50xmq4uh" path="res://notes_journal/note_joconde.tscn" id="8_dphkt"]
+[ext_resource type="PackedScene" uid="uid://umx1tlod3g6m" path="res://notes_journal/note_jumelles.tscn" id="9_ulqhm"]
+[ext_resource type="PackedScene" uid="uid://bswheqgvgudva" path="res://notes_journal/note_menottes.tscn" id="10_67f7i"]
+[ext_resource type="PackedScene" uid="uid://dkr47b4fqcacp" path="res://notes_journal/note_oignon.tscn" id="11_njaxw"]
+[ext_resource type="PackedScene" uid="uid://bvyctw6sm7g44" path="res://notes_journal/note_popcorn.tscn" id="12_hfdee"]
+[ext_resource type="PackedScene" uid="uid://by346d73u07ng" path="res://notes_journal/note_vin.tscn" id="13_qr450"]
+[ext_resource type="PackedScene" uid="uid://bsy1b61csvtod" path="res://notes_journal/note_chapeau.tscn" id="14_r6bs2"]
 
 [sub_resource type="Animation" id="Animation_ik6nq"]
 resource_name = "journal"
@@ -52,16 +63,40 @@ offset_right = 638.0
 offset_bottom = 1196.0
 theme_override_constants/separation = 62
 
-[node name="entrée_de_journal2" parent="TextureRect/VBoxContainer" instance=ExtResource("2_27sx5")]
-visible = false
+[node name="Cham" parent="TextureRect/VBoxContainer" instance=ExtResource("3_hj3ja")]
 layout_mode = 2
 
-[node name="entrée_de_journal" parent="TextureRect/VBoxContainer" instance=ExtResource("2_27sx5")]
-visible = false
+[node name="Couteau" parent="TextureRect/VBoxContainer" instance=ExtResource("4_625nv")]
 layout_mode = 2
 
-[node name="Panel" parent="TextureRect/VBoxContainer" instance=ExtResource("2_27sx5")]
-visible = false
+[node name="Crane" parent="TextureRect/VBoxContainer" instance=ExtResource("5_iy0gs")]
+layout_mode = 2
+
+[node name="Fleurs" parent="TextureRect/VBoxContainer" instance=ExtResource("6_ekmbc")]
+layout_mode = 2
+
+[node name="Glacoune" parent="TextureRect/VBoxContainer" instance=ExtResource("7_p0vir")]
+layout_mode = 2
+
+[node name="Joconde" parent="TextureRect/VBoxContainer" instance=ExtResource("8_dphkt")]
+layout_mode = 2
+
+[node name="Jumelles" parent="TextureRect/VBoxContainer" instance=ExtResource("9_ulqhm")]
+layout_mode = 2
+
+[node name="Menottes" parent="TextureRect/VBoxContainer" instance=ExtResource("10_67f7i")]
+layout_mode = 2
+
+[node name="Oignon" parent="TextureRect/VBoxContainer" instance=ExtResource("11_njaxw")]
+layout_mode = 2
+
+[node name="Popcorn" parent="TextureRect/VBoxContainer" instance=ExtResource("12_hfdee")]
+layout_mode = 2
+
+[node name="Vin" parent="TextureRect/VBoxContainer" instance=ExtResource("13_qr450")]
+layout_mode = 2
+
+[node name="Chapeau" parent="TextureRect/VBoxContainer" instance=ExtResource("14_r6bs2")]
 layout_mode = 2
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

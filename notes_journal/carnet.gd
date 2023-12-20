@@ -1,26 +1,8 @@
 extends Control
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	"SignalBus.entrée_crane.connect(afficher_crane)
-	SignalBus.entrée_oignon.connect(afficher_oignon)
-	SignalBus.entrée_couteau.connect(afficher_couteau)
-	SignalBus.entrée_chapeau.connect(afficher_chapeau)
-	SignalBus.entrée_jumelles.connect(afficher_jumelles)
-	SignalBus.entrée_glacoun.connect(afficher_glacoun)
-	SignalBus.entrée_vin.connect(afficher_vin)
-	SignalBus.entrée_fleurs.connect(afficher_fleurs)
-	SignalBus.entrée_cham.connect(afficher_cham)
-	SignalBus.entrée_menottes.connect(afficher_menottes)
-	SignalBus.entrée_joconde.connect(afficher_joconde)
-	SignalBus.entrée_pnj1.connect(afficher_pnj1)
-	SignalBus.entrée_pnj2.connect(afficher_pnj2)
-	SignalBus.entrée_pnj3.connect(afficher_pnj3)
-	SignalBus.entrée_pnj4.connect(afficher_pnj4)
-	SignalBus.entrée_masque_sourire.connect(afficher)
-	SignalBus.entrée_masque_triste.connect(afficher)
-"
+	pass
 	
 	
 
@@ -30,19 +12,75 @@ func _ready():
 func _process(delta):
 	pass
 
-func afficher():
-	
-	
-	
-	print("pouet")
 
 
-	
+func _on_jumelle_clicked_on_object():
+	show carnet.TextureRect.VBoxContainer.Jumelles 
 
 
+func _on_thierry_clicked_on_object():
+	pass # Replace with function body.
 
-#hide()
+
+func _on_stoul_clicked_on_object():
+	pass # Replace with function body.
 
 
-func Carnet_on_stair_clicked_on_object():
-	$TextureRect/VBoxContainer/entrée_de_journal2.show()
+func _on_stair_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_ptitcham_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_popcorn_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_pocket_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_painting_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_knife_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_kirby_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_hat_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_handcuff_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_glacoun_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_onions_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_flower_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_skull_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_mask_sad_clicked_on_object():
+	pass # Replace with function body.
+
+
+func _on_mask_smile_clicked_on_object():
+	pass # Replace with function body.
