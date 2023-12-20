@@ -1,63 +1,207 @@
-[gd_scene load_steps=6 format=3 uid="uid://c3040weor37fb"]
+[gd_scene load_steps=22 format=3 uid="uid://c3040weor37fb"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_cekwp"]
 [ext_resource type="PackedScene" uid="uid://cmquqf3lqilqu" path="res://Interactible.tscn" id="1_u1pr7"]
+[ext_resource type="Texture2D" uid="uid://cfb841b2bgy5e" path="res://Assets/Skull.png" id="2_3vf4a"]
+[ext_resource type="Texture2D" uid="uid://cmi51pwiw3r36" path="res://Assets/Popcorn.png" id="3_6ikva"]
 [ext_resource type="PackedScene" uid="uid://dhwyxhpy33sor" path="res://Textbox.tscn" id="3_7wb8n"]
+[ext_resource type="Texture2D" uid="uid://07gb81rlbin8" path="res://Assets/Onion.png" id="4_p4cq5"]
 [ext_resource type="Texture2D" uid="uid://bgrhrh5ftpgsl" path="res://Assets/export202312201128598280-1.png" id="4_xmw5m"]
+[ext_resource type="Texture2D" uid="uid://bux52l3mxu0le" path="res://Assets/Knife.png" id="5_gqn63"]
+[ext_resource type="Texture2D" uid="uid://k4sq86dfxnle" path="res://Assets/Hat.png" id="6_jfjt4"]
+[ext_resource type="Texture2D" uid="uid://g406bxs1vvl2" path="res://Assets/Jumelle.png" id="7_ds16d"]
+[ext_resource type="Texture2D" uid="uid://d3uxqlhwb4acx" path="res://Assets/Glacoun.png" id="8_pd8pv"]
+[ext_resource type="Texture2D" uid="uid://dv3bilxiwhcbj" path="res://Assets/Flower.png" id="9_lar3p"]
+[ext_resource type="Texture2D" uid="uid://p4kfa2g1t7as" path="res://Assets/PtitCham.png" id="10_kf72h"]
+[ext_resource type="Texture2D" uid="uid://c75l313cc6xuh" path="res://Assets/Handcuff.png" id="11_73gpi"]
+[ext_resource type="Texture2D" uid="uid://ceq401afbywp6" path="res://Assets/Kirby.png" id="12_yksvr"]
+[ext_resource type="Texture2D" uid="uid://l5pr3sj55y1w" path="res://Assets/Mask_happy.png" id="13_ic3kk"]
+[ext_resource type="Texture2D" uid="uid://dw6nsnhfnwv48" path="res://Assets/Mask_sad.png" id="14_wbl84"]
+[ext_resource type="Texture2D" uid="uid://bartrec2fdh6o" path="res://Assets/Pocket.png" id="15_114po"]
+[ext_resource type="Texture2D" uid="uid://cqaygfrvoh0s1" path="res://Assets/Thierry.png" id="16_juph6"]
+[ext_resource type="Texture2D" uid="uid://cjy10cwd1rava" path="res://Assets/Painting.png" id="17_bgat3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_egqih"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3vf4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6ikva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p4cq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gqn63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jfjt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ds16d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pd8pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lar3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kf72h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_73gpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_yksvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ic3kk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_wbl84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_114po")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_juph6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_bgat3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Main" type="Node2D" node_paths=PackedStringArray("sprite")]
 script = ExtResource("1_cekwp")
 sprite = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(866, 286)
 sprite_frames = SubResource("SpriteFrames_egqih")
-
-[node name="Porte" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(149, 172)
-
-[node name="PNJ1" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(570.57, 166.009)
 
 [node name="Scene" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(863, 483)
-scale = Vector2(0.453034, 0.375294)
+position = Vector2(959, 537)
+scale = Vector2(0.504617, 0.422941)
 texture = ExtResource("4_xmw5m")
 
 [node name="TextBox" parent="." instance=ExtResource("3_7wb8n")]
+visible = false
+z_index = 1
 offset_left = 328.0
 offset_top = 273.0
 offset_right = 865.0
 offset_bottom = 692.0
 
+[node name="PNJ1" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(571, 84)
+scale = Vector2(0.5, 0.5)
+
+[node name="Porte" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(1312, 589)
+scale = Vector2(0.2, 0.2)
+
 [node name="Mask_smile" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(883, 178)
+position = Vector2(459, 606)
+rotation = -1.5708
+scale = Vector2(0.1, 0.1)
 
 [node name="Mask_sad" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(1124, 194)
+position = Vector2(628, 580)
+rotation = -1.5708
+scale = Vector2(0.1, 0.1)
 
 [node name="Skull" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(428, 407)
+position = Vector2(182, 615)
+scale = Vector2(0.1, 0.1)
 
 [node name="Flower" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(799, 472)
+position = Vector2(825, 956)
+scale = Vector2(0.5, 0.5)
 
 [node name="Onions" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(1280, 436)
+position = Vector2(1148, 254)
+scale = Vector2(0.1, 0.1)
 
-[node name="Node2D6" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(146, 410)
+[node name="Glacoun" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(1458, 246)
+rotation = 0.261799
+scale = Vector2(0.1, 0.1)
 
-[node name="Node2D7" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(622, 422)
+[node name="Handcuff" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(1728, 736)
+scale = Vector2(0.1, 0.1)
 
-[node name="Node2D8" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(1012, 443)
+[node name="Hat" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(228, 212)
+scale = Vector2(0.1, 0.1)
 
-[node name="Node2D9" parent="." instance=ExtResource("1_u1pr7")]
-position = Vector2(1541, 281)
+[node name="Kirby" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(747, 685)
+scale = Vector2(0.1, 0.1)
 
-[connection signal="clicked_on_object" from="Porte" to="." method="_on_node_2d_clicked_on_object"]
+[node name="Knife" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(962, 606)
+scale = Vector2(0.1, 0.1)
+
+[node name="Painting" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(207, 601)
+rotation = -0.0523599
+scale = Vector2(0.2, 0.2)
+
+[node name="Pocket" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(1432, 963)
+scale = Vector2(0.1, 0.1)
+
+[node name="Popcorn" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(1061, 962)
+scale = Vector2(0.5, 0.5)
+
+[node name="Ptitcham" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(949, 964)
+scale = Vector2(0.5, 0.5)
+
+[node name="Stair" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(955, 600)
+scale = Vector2(0.2, 0.2)
+
+[node name="Stoul" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(742, 681)
+scale = Vector2(0.2, 0.2)
+
+[node name="Thierry" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(1043, 527)
+scale = Vector2(0.1, 0.1)
+
+[node name="Jumelle" parent="." instance=ExtResource("1_u1pr7")]
+position = Vector2(84, 846)
+rotation = -1.22173
+scale = Vector2(0.1, 0.1)
+
 [connection signal="clicked_on_object" from="PNJ1" to="." method="_on_pnj_1_clicked_on_object"]
+[connection signal="clicked_on_object" from="Porte" to="." method="_on_node_2d_clicked_on_object"]
+[connection signal="clicked_on_object" from="Mask_smile" to="." method="_on_mask_smile_clicked_on_object"]
+[connection signal="clicked_on_object" from="Mask_sad" to="." method="_on_mask_sad_clicked_on_object"]
+[connection signal="clicked_on_object" from="Skull" to="." method="_on_skull_clicked_on_object"]
+[connection signal="clicked_on_object" from="Flower" to="." method="_on_flower_clicked_on_object"]
+[connection signal="clicked_on_object" from="Onions" to="." method="_on_onions_clicked_on_object"]
+[connection signal="clicked_on_object" from="Glacoun" to="." method="_on_glacoun_clicked_on_object"]
+[connection signal="clicked_on_object" from="Handcuff" to="." method="_on_handcuff_clicked_on_object"]
+[connection signal="clicked_on_object" from="Hat" to="." method="_on_hat_clicked_on_object"]
+[connection signal="clicked_on_object" from="Kirby" to="." method="_on_kirby_clicked_on_object"]
+[connection signal="clicked_on_object" from="Knife" to="." method="_on_knife_clicked_on_object"]
+[connection signal="clicked_on_object" from="Painting" to="." method="_on_painting_clicked_on_object"]
+[connection signal="clicked_on_object" from="Pocket" to="." method="_on_pocket_clicked_on_object"]
+[connection signal="clicked_on_object" from="Popcorn" to="." method="_on_popcorn_clicked_on_object"]
+[connection signal="clicked_on_object" from="Ptitcham" to="." method="_on_ptitcham_clicked_on_object"]
+[connection signal="clicked_on_object" from="Stair" to="." method="_on_stair_clicked_on_object"]
+[connection signal="clicked_on_object" from="Stoul" to="." method="_on_stoul_clicked_on_object"]
+[connection signal="clicked_on_object" from="Thierry" to="." method="_on_thierry_clicked_on_object"]
+[connection signal="clicked_on_object" from="Jumelle" to="." method="_on_jumelle_clicked_on_object"]
