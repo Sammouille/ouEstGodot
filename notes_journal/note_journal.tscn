@@ -14,13 +14,13 @@ script = ExtResource("1_vbfjt")
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 42.0
-offset_top = 36.0
-offset_right = 245.0
-offset_bottom = 67.0
+offset_left = 43.0
+offset_top = 34.0
+offset_right = 246.0
+offset_bottom = 65.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_lw4mb")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 27
 text = "C'est sûrement celui de Godot ..."
 
 [node name="Label" type="Label" parent="."]
@@ -29,14 +29,14 @@ offset_right = 178.0
 offset_bottom = 41.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_lw4mb")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 37
 text = "J'ai trouvé un crâne."
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 32.0
-offset_right = 45.0
-offset_bottom = 58.0
+offset_left = 20.0
+offset_top = 26.0
+offset_right = 46.0
+offset_bottom = 52.0
 texture = ExtResource("2_0ca1u")
 expand_mode = 1

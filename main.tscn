@@ -2,10 +2,14 @@
 
 [ext_resource type="Script" path="res://main.gd" id="1_cekwp"]
 [ext_resource type="PackedScene" uid="uid://cmquqf3lqilqu" path="res://Interactible.tscn" id="1_u1pr7"]
+
 [ext_resource type="Texture2D" uid="uid://cfb841b2bgy5e" path="res://Assets/Skull.png" id="2_3vf4a"]
 [ext_resource type="Texture2D" uid="uid://cmi51pwiw3r36" path="res://Assets/Popcorn.png" id="3_6ikva"]
 [ext_resource type="PackedScene" uid="uid://dhwyxhpy33sor" path="res://Textbox.tscn" id="3_7wb8n"]
 [ext_resource type="Texture2D" uid="uid://07gb81rlbin8" path="res://Assets/Onion.png" id="4_p4cq5"]
+
+[ext_resource type="PackedScene" uid="uid://dhwyxhpy33sor" path="res://Indice.tscn" id="3_7wb8n"]
+
 [ext_resource type="Texture2D" uid="uid://bgrhrh5ftpgsl" path="res://Assets/export202312201128598280-1.png" id="4_xmw5m"]
 [ext_resource type="Texture2D" uid="uid://bux52l3mxu0le" path="res://Assets/Knife.png" id="5_gqn63"]
 [ext_resource type="Texture2D" uid="uid://k4sq86dfxnle" path="res://Assets/Hat.png" id="6_jfjt4"]
