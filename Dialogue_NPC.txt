@@ -1,0 +1,15 @@
+PNJ 1 : 
+“Je l’ai vue partir au toilettes y’a 5 minutes.”
+PNJ 2 : 
+“Il est au-dessus de nous tous.”
+PNJ 3 : 
+“J’sais pas, j’ai faim…”
+PNJ 4 :
+“Probablement en coulisse.”
+PNJ 5 : 
+“T’as regardé dans ton ***?”
+“5 minutes? Il n’y est sûrement plus. Il ne prend jamais plus de 3 minutes pour faire caca.”
+“Mais il n’y a aucun arbre à grimper ici.”
+“J’ai vu plusieurs paquets de pop corn dans le coin.” (revenir voir le PNJ 3 pour une information importante).
+“Il m’a semblé entendre un bruit étrange qui venait justement de là-bas.”
+“Je n’ai jamais rien mis de plus qu’un oignon dans mon fion, c’est impossible.”
