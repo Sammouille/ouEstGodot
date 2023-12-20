@@ -230,8 +230,8 @@ visible = false
 position = Vector2(1330, 594)
 scale = Vector2(0.1, 0.1)
 
-[connection signal="clicked_on_object" from="Porte" to="." method="_on_node_2d_clicked_on_object"]
 [connection signal="clicked_on_object" from="Porte" to="." method="_on_porte_clicked_on_object"]
+[connection signal="clicked_on_object" from="Porte" to="." method="_on_node_2d_clicked_on_object"]
 [connection signal="clicked_on_object" from="Mask_smile" to="." method="_on_mask_smile_clicked_on_object"]
 [connection signal="clicked_on_object" from="Mask_sad" to="." method="_on_mask_sad_clicked_on_object"]
 [connection signal="clicked_on_object" from="Skull" to="." method="_on_skull_clicked_on_object"]
@@ -257,5 +257,5 @@ scale = Vector2(0.1, 0.1)
 [connection signal="clicked_on_object" from="PNJ_Coulisse" to="." method="_on_pnj_coulisse_clicked_on_object"]
 [connection signal="clicked_on_object" from="PNJ_Cul" to="." method="_on_pnj_cul_clicked_on_object"]
 [connection signal="clicked_on_object" from="Wine" to="." method="_on_wine_clicked_on_object"]
-[editable path="Control"]
 
+[editable path="Control"]
