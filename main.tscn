@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c3040weor37fb"]
+[gd_scene load_steps=23 format=3 uid="uid://c3040weor37fb"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_cekwp"]
 [ext_resource type="PackedScene" uid="uid://cmquqf3lqilqu" path="res://Interactible.tscn" id="1_u1pr7"]
@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://bartrec2fdh6o" path="res://Assets/Pocket.png" id="15_114po"]
 [ext_resource type="Texture2D" uid="uid://cqaygfrvoh0s1" path="res://Assets/Thierry.png" id="16_juph6"]
 [ext_resource type="Texture2D" uid="uid://cjy10cwd1rava" path="res://Assets/Painting.png" id="17_bgat3"]
+[ext_resource type="PackedScene" uid="uid://dbbc7i8y6xd6v" path="res://notes_journal/carnet.tscn" id="21_dux0w"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_egqih"]
 animations = [{
@@ -183,6 +184,12 @@ offset_left = -17.0
 offset_top = -6.0
 offset_right = -17.0
 offset_bottom = -6.0
+
+[node name="Control" parent="." instance=ExtResource("21_dux0w")]
+offset_left = 1747.0
+offset_top = -28.0
+offset_right = 1747.0
+offset_bottom = -28.0
 
 [connection signal="clicked_on_object" from="PNJ1" to="." method="_on_pnj_1_clicked_on_object"]
 [connection signal="clicked_on_object" from="Porte" to="." method="_on_node_2d_clicked_on_object"]

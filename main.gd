@@ -51,7 +51,7 @@ func _on_node_2d_clicked_on_object():
 
 
 func _on_pnj_1_clicked_on_object():
-	pass
+	SignalBus.entrée_journal.emit()
 
 
 func _on_mask_smile_clicked_on_object():
@@ -60,6 +60,7 @@ func _on_mask_smile_clicked_on_object():
 	$TextBox/Panel/Description.text = text_tab[1]
 	
 	$AnimatedSprite2D.frame = 11
+	SignalBus.entrée_journal.emit("masque_sourire")
 
 
 func _on_mask_sad_clicked_on_object():
