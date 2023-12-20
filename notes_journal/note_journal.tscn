@@ -6,13 +6,32 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8dir4"]
 
-[node name="Panel" type="Panel"]
+[node name="entrée_de_journal" type="Panel"]
 offset_right = 274.0
 offset_bottom = 66.0
 theme_override_styles/panel = SubResource("StyleBoxEmpty_8dir4")
 script = ExtResource("1_vbfjt")
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 179.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_lw4mb")
+theme_override_font_sizes/font_size = 37
+text = "J'ai trouvé un crâne."
+
+[node name="TextureRect2" type="TextureRect" parent="Label"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 28.0
+offset_right = 43.0
+offset_bottom = 54.0
+texture = ExtResource("2_0ca1u")
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="Label"]
 layout_mode = 0
 offset_left = 43.0
 offset_top = 34.0
@@ -22,21 +41,3 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_lw4mb")
 theme_override_font_sizes/font_size = 27
 text = "C'est sûrement celui de Godot ..."
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_right = 178.0
-offset_bottom = 41.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_lw4mb")
-theme_override_font_sizes/font_size = 37
-text = "J'ai trouvé un crâne."
-
-[node name="TextureRect2" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 20.0
-offset_top = 26.0
-offset_right = 46.0
-offset_bottom = 52.0
-texture = ExtResource("2_0ca1u")
-expand_mode = 1
