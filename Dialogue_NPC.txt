@@ -13,3 +13,7 @@ PNJ 5 :
 “J’ai vu plusieurs paquets de pop corn dans le coin.” (revenir voir le PNJ 3 pour une information importante).
 “Il m’a semblé entendre un bruit étrange qui venait justement de là-bas.”
 “Je n’ai jamais rien mis de plus qu’un oignon dans mon fion, c’est impossible.”
+PNJ 2 :
+"Tu as trouvé la figurine de mon idôle ! On m'a dit qu'en plus des 2 objets, la joconde doit aussi etre déplacée rapidement."
+PNJ 3 :
+"Ah tu régales adelphe ! J'ai appris que y avait un truc bizarre lié aux masques sur les murs si t'appuies vites sur les 2."

@@ -1,20 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://dr317ruxqvw41"]
+[gd_scene load_steps=4 format=3 uid="uid://dr317ruxqvw41"]
 
+[ext_resource type="Script" path="res://ecran_titre.gd" id="1_2jqnb"]
 [ext_resource type="Texture2D" uid="uid://mjq6mahfn7vl" path="res://Assets/27d1956bb6eb9fa6d6a0ae5714ce41c4.png" id="1_polr4"]
+[ext_resource type="Texture2D" uid="uid://dbutqabf6csko" path="res://Assets/263a61697eca0dc734503edfe58ff2d4.png" id="2_uh8gk"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_2jqnb")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 240.0
-offset_top = 141.0
-offset_right = 473.0
-offset_bottom = 249.0
+offset_left = 764.0
+offset_top = 450.0
+offset_right = 997.0
+offset_bottom = 558.0
 clip_text = true
 
 [node name="TextureRect" type="TextureRect" parent="Button"]
 layout_mode = 0
-offset_left = -1.0
-offset_top = 2.0
-offset_right = 233.0
-offset_bottom = 108.0
+offset_left = 8.0
+offset_top = 11.0
+offset_right = 242.0
+offset_bottom = 117.0
 texture = ExtResource("1_polr4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 105.0
+offset_top = 47.0
+offset_right = 1878.0
+offset_bottom = 278.0
+texture = ExtResource("2_uh8gk")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

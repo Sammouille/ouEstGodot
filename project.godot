@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="Ou_est_Godot"
-run/main_scene="res://main.tscn"
+run/main_scene="res://ecran_titre.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
+boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
 config/icon="res://icon.svg"
 
 [autoload]

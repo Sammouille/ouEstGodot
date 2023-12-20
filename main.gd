@@ -11,7 +11,8 @@ var timed = Timer.new()
 var mask_sourire_appuye = false
 var mask_bad_appuye = false
 var dialogue_obtenu
-
+var popcorn_obtenu = false
+var thierry_obtenu = false
 
 var objet = Objets.new()
 
@@ -207,6 +208,7 @@ func _on_popcorn_clicked_on_object():
 	$TextBox/Panel/Description.text = text_tab[3]
 	
 	$AnimatedSprite2D.frame = 1
+	popcorn_obtenu = true
 
 
 
@@ -233,6 +235,7 @@ func _on_thierry_clicked_on_object():
 	$TextBox/Panel/Description.text = text_tab[25]
 	
 	$AnimatedSprite2D.frame = 14
+	thierry_obtenu = true
 
 
 
@@ -258,6 +261,8 @@ func _on_pnj_a_rbre_clicked_on_object():
 	$TextBox/Panel/Nom.text = text_tab_npc[2]
 	$TextBox/Panel/Description.text = text_tab_npc[3]
 	dialogue_obtenu = 2
+	if thierry_obtenu:
+		$TextBox/Panel/Description.text = text_tab_npc[16]
 
 func _on_pnj_popcorn_clicked_on_object():
 	make_sprite_and_textbox_visible()
@@ -265,6 +270,8 @@ func _on_pnj_popcorn_clicked_on_object():
 	$TextBox/Panel/Nom.text = text_tab_npc[4]
 	$TextBox/Panel/Description.text = text_tab_npc[5]
 	dialogue_obtenu = 3
+	if popcorn_obtenu:
+		$TextBox/Panel/Description.text = text_tab_npc[18]
 
 func _on_pnj_coulisse_clicked_on_object():
 	make_sprite_and_textbox_visible()
