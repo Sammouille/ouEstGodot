@@ -13,6 +13,7 @@ var mask_bad_appuye = false
 var dialogue_obtenu
 var popcorn_obtenu = false
 var thierry_obtenu = false
+var journal_sorti = false
 
 var objet = Objets.new()
 
@@ -298,3 +299,19 @@ func _on_wine_clicked_on_object():
 	
 	$AnimatedSprite2D.frame = 16
 
+
+
+
+
+#func _on_texture_rect_mouse_entered():
+#	if journal_sorti == false :
+#		$Control/TextureRect.position.x -= 500
+#		journal_sorti = true
+	
+#	$Control/TextureRect/SortirJournal.play("sortirJournal")
+
+#func _on_texture_rect_mouse_exited():
+#	$Control/TextureRect/SortirJournal.play("rentrerJournal")
+#	if journal_sorti == false :
+#		$Control/TextureRect.position.x += 500
+#		journal_sorti = false

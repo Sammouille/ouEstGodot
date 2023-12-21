@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c3040weor37fb"]
+[gd_scene load_steps=26 format=3 uid="uid://c3040weor37fb"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_cekwp"]
 [ext_resource type="PackedScene" uid="uid://cmquqf3lqilqu" path="res://Interactible.tscn" id="1_u1pr7"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://da0wyh4kjx1s8" path="res://Assets/Miam_du_vin_3.png" id="18_g22xo"]
 [ext_resource type="PackedScene" uid="uid://dbbc7i8y6xd6v" path="res://notes_journal/carnet.tscn" id="21_dux0w"]
 [ext_resource type="AudioStream" uid="uid://b856agg6usfnh" path="res://Assets/Alioune_Seck_-_Sans_titre_20_dec._2023_a_1409_2023-12-20_14_09.wav" id="22_ttoan"]
+[ext_resource type="Script" path="res://sprite_journal.gd" id="23_iqtdr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_egqih"]
 animations = [{
@@ -190,11 +191,19 @@ offset_top = -6.0
 offset_right = -17.0
 offset_bottom = -6.0
 
+[node name="carnet" parent="." instance=ExtResource("21_dux0w")]
+
 [node name="Control" parent="." instance=ExtResource("21_dux0w")]
-offset_left = 1747.0
-offset_top = -28.0
-offset_right = 1747.0
-offset_bottom = -28.0
+visible = false
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="TextureRect" parent="Control" index="0"]
+offset_top = -0.00730036
+script = ExtResource("23_iqtdr")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("22_ttoan")
@@ -230,8 +239,8 @@ visible = false
 position = Vector2(1330, 594)
 scale = Vector2(0.1, 0.1)
 
-[connection signal="clicked_on_object" from="Porte" to="." method="_on_node_2d_clicked_on_object"]
 [connection signal="clicked_on_object" from="Porte" to="." method="_on_porte_clicked_on_object"]
+[connection signal="clicked_on_object" from="Porte" to="." method="_on_node_2d_clicked_on_object"]
 [connection signal="clicked_on_object" from="Mask_smile" to="." method="_on_mask_smile_clicked_on_object"]
 [connection signal="clicked_on_object" from="Mask_smile" to="Control" method="_on_mask_smile_clicked_on_object"]
 [connection signal="clicked_on_object" from="Mask_sad" to="." method="_on_mask_sad_clicked_on_object"]
@@ -269,6 +278,10 @@ scale = Vector2(0.1, 0.1)
 [connection signal="clicked_on_object" from="Thierry" to="Control" method="_on_thierry_clicked_on_object"]
 [connection signal="clicked_on_object" from="Jumelle" to="." method="_on_jumelle_clicked_on_object"]
 [connection signal="clicked_on_object" from="Jumelle" to="Control" method="_on_jumelle_clicked_on_object"]
+[connection signal="mouse_entered" from="Control" to="." method="_on_control_mouse_entered"]
+[connection signal="mouse_exited" from="Control" to="." method="_on_control_mouse_exited"]
+[connection signal="mouse_entered" from="Control/TextureRect" to="." method="_on_texture_rect_mouse_entered"]
+[connection signal="mouse_exited" from="Control/TextureRect" to="." method="_on_texture_rect_mouse_exited"]
 [connection signal="clicked_on_object" from="PNJ_Toilette" to="." method="_on_pnj_toilette_clicked_on_object"]
 [connection signal="clicked_on_object" from="PNJ_ARbre" to="." method="_on_pnj_a_rbre_clicked_on_object"]
 [connection signal="clicked_on_object" from="PNJ_Popcorn" to="." method="_on_pnj_popcorn_clicked_on_object"]
@@ -276,4 +289,5 @@ scale = Vector2(0.1, 0.1)
 [connection signal="clicked_on_object" from="PNJ_Cul" to="." method="_on_pnj_cul_clicked_on_object"]
 [connection signal="clicked_on_object" from="Wine" to="." method="_on_wine_clicked_on_object"]
 
+[editable path="carnet"]
 [editable path="Control"]
