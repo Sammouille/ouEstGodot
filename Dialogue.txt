@@ -24,3 +24,9 @@ Joconde - Piste de sa mère
 “Haa, la mère de Godot… C’est de toute beauté.”
 Peluche de Yrreiht - Débloqué dialogue
 "Malgré mon ressenti pour lui, le sourire de cette peluche ne peut que me réconforter..."
+Masque triste - Objet suspicieux
+"Le désespoir m'emplit quand je regarde ce masque... Godot où es tu donc passé..."
+Masque joyeux - Objet suspicieux
+"Alors peut être ?"
+Poche - Piste du contrebandier
+"C'est la poche que Godot porte toujours à sa ceinture ! Bizarre, elle est pleine de bille..."

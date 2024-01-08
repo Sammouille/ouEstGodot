@@ -8,11 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://behrnncpxr2tk" path="res://Assets/OIgnon.png" id="4_oxp7k"]
 [ext_resource type="Texture2D" uid="uid://bgrhrh5ftpgsl" path="res://Assets/export202312201128598280-1.png" id="4_xmw5m"]
 [ext_resource type="Texture2D" uid="uid://bux52l3mxu0le" path="res://Assets/Knife.png" id="5_gqn63"]
-[ext_resource type="Texture2D" uid="uid://hm2jjn0uymlf" path="res://Assets/Chapeau_.png" id="7_37wxi"]
-[ext_resource type="Texture2D" uid="uid://g406bxs1vvl2" path="res://Assets/Jumelle.png" id="7_ds16d"]
+[ext_resource type="Texture2D" uid="uid://dfk8n87s1oxnu" path="res://Assets/Chapeau_2.png" id="7_ps45q"]
+[ext_resource type="Texture2D" uid="uid://q4417txsfio1" path="res://Assets/Lunette.png" id="8_t6in1"]
 [ext_resource type="Texture2D" uid="uid://dv3bilxiwhcbj" path="res://Assets/Flower.png" id="9_lar3p"]
 [ext_resource type="Texture2D" uid="uid://p4kfa2g1t7as" path="res://Assets/PtitCham.png" id="10_kf72h"]
-[ext_resource type="Texture2D" uid="uid://jqnqm0cgygl7" path="res://Assets/Pingoin.png" id="10_uttro"]
+[ext_resource type="Texture2D" uid="uid://cbwqvjkkeh7ug" path="res://Assets/Pingoin_1.png" id="10_okfao"]
 [ext_resource type="Texture2D" uid="uid://c75l313cc6xuh" path="res://Assets/Handcuff.png" id="11_73gpi"]
 [ext_resource type="Texture2D" uid="uid://ceq401afbywp6" path="res://Assets/Kirby.png" id="12_yksvr"]
 [ext_resource type="Texture2D" uid="uid://l5pr3sj55y1w" path="res://Assets/Mask_happy.png" id="13_ic3kk"]
@@ -43,16 +43,16 @@ animations = [{
 "texture": ExtResource("9_lar3p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_37wxi")
+"texture": ExtResource("7_ps45q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ds16d")
+"texture": ExtResource("8_t6in1")
 }, {
 "duration": 1.0,
 "texture": ExtResource("12_yksvr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_uttro")
+"texture": ExtResource("10_okfao")
 }, {
 "duration": 1.0,
 "texture": ExtResource("11_73gpi")

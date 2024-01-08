@@ -90,8 +90,8 @@ func _on_pnj_1_clicked_on_object():
 
 func _on_mask_smile_clicked_on_object():
 	make_sprite_and_textbox_visible()
-	$TextBox/Panel/Nom.text = text_tab[0]
-	$TextBox/Panel/Description.text = text_tab[1]
+	$TextBox/Panel/Nom.text = text_tab[28]
+	$TextBox/Panel/Description.text = text_tab[29]
 	
 	$AnimatedSprite2D.frame = 11
 
@@ -102,8 +102,8 @@ func _on_mask_smile_clicked_on_object():
 
 func _on_mask_sad_clicked_on_object():
 	make_sprite_and_textbox_visible()
-	$TextBox/Panel/Nom.text = text_tab[0]
-	$TextBox/Panel/Description.text = text_tab[1]
+	$TextBox/Panel/Nom.text = text_tab[26]
+	$TextBox/Panel/Description.text = text_tab[27]
 	
 	$AnimatedSprite2D.frame = 12
 
@@ -123,8 +123,8 @@ func _on_skull_clicked_on_object():
 
 func _on_flower_clicked_on_object():
 	make_sprite_and_textbox_visible()
-	$TextBox/Panel/Nom.text = text_tab[14]
-	$TextBox/Panel/Description.text = text_tab[15]
+	$TextBox/Panel/Nom.text = text_tab[16]
+	$TextBox/Panel/Description.text = text_tab[17]
 	
 	$AnimatedSprite2D.frame = 4
 
@@ -147,8 +147,8 @@ func _on_glacoun_clicked_on_object():
 
 func _on_handcuff_clicked_on_object():
 	make_sprite_and_textbox_visible()
-	$TextBox/Panel/Nom.text = text_tab[18]
-	$TextBox/Panel/Description.text = text_tab[19]
+	$TextBox/Panel/Nom.text = text_tab[20]
+	$TextBox/Panel/Description.text = text_tab[21]
 	
 	$AnimatedSprite2D.frame = 9
 
@@ -195,8 +195,8 @@ func _on_painting_clicked_on_object():
 
 func _on_pocket_clicked_on_object():
 	make_sprite_and_textbox_visible()
-	$TextBox/Panel/Nom.text = text_tab[0]
-	$TextBox/Panel/Description.text = text_tab[1]
+	$TextBox/Panel/Nom.text = text_tab[30]
+	$TextBox/Panel/Description.text = text_tab[31]
 	
 	$AnimatedSprite2D.frame = 13
 
@@ -214,8 +214,8 @@ func _on_popcorn_clicked_on_object():
 
 func _on_ptitcham_clicked_on_object():
 	make_sprite_and_textbox_visible()
-	$TextBox/Panel/Nom.text = text_tab[16]
-	$TextBox/Panel/Description.text = text_tab[17]
+	$TextBox/Panel/Nom.text = text_tab[18]
+	$TextBox/Panel/Description.text = text_tab[19]
 	
 	$AnimatedSprite2D.frame = 10
 
@@ -293,8 +293,8 @@ func _on_porte_clicked_on_object():
 
 func _on_wine_clicked_on_object():
 	make_sprite_and_textbox_visible()
-	$TextBox/Panel/Nom.text = text_tab[10]
-	$TextBox/Panel/Description.text = text_tab[11]
+	$TextBox/Panel/Nom.text = text_tab[14]
+	$TextBox/Panel/Description.text = text_tab[15]
 	
 	$AnimatedSprite2D.frame = 16
 
