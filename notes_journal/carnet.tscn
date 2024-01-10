@@ -1,10 +1,12 @@
-[gd_scene load_steps=30 format=3 uid="uid://dbbc7i8y6xd6v"]
+[gd_scene load_steps=36 format=3 uid="uid://dbbc7i8y6xd6v"]
 
 [ext_resource type="Texture2D" uid="uid://dqe7lnopucjho" path="res://notes_journal/journal.png" id="1_mjsox"]
 [ext_resource type="Script" path="res://notes_journal/listeEntree.gd" id="2_2dk3t"]
+[ext_resource type="PackedScene" uid="uid://cksco80dvasoe" path="res://notes_journal/note_thierry.tscn" id="3_3vndv"]
 [ext_resource type="Script" path="res://notes_journal/note_cham.gd" id="3_5w28u"]
 [ext_resource type="PackedScene" uid="uid://drkypstj5th7a" path="res://notes_journal/note_cham.tscn" id="3_hj3ja"]
 [ext_resource type="PackedScene" uid="uid://pmsvaevp8uhu" path="res://notes_journal/note_couteau.tscn" id="4_625nv"]
+[ext_resource type="Script" path="res://notes_journal/note_thierry.gd" id="4_jcwul"]
 [ext_resource type="Script" path="res://notes_journal/note_couteau.gd" id="5_da3xj"]
 [ext_resource type="PackedScene" uid="uid://b8ojcjsx47rlk" path="res://notes_journal/note_crane.tscn" id="5_iy0gs"]
 [ext_resource type="PackedScene" uid="uid://cnlvh2x574yln" path="res://notes_journal/note_fleurs.tscn" id="6_ekmbc"]
@@ -26,6 +28,10 @@
 [ext_resource type="Script" path="res://notes_journal/note_oignon.gd" id="19_0el0r"]
 [ext_resource type="Script" path="res://notes_journal/note_vin.gd" id="23_ul7al"]
 [ext_resource type="Script" path="res://notes_journal/note_chapeau.gd" id="25_wxoyy"]
+[ext_resource type="PackedScene" uid="uid://vmrosfghxejw" path="res://notes_journal/note_masque_triste.tscn" id="27_0tc3v"]
+[ext_resource type="Script" path="res://notes_journal/note_masque_triste.gd" id="28_gkviq"]
+[ext_resource type="PackedScene" uid="uid://c1mf7jufglr52" path="res://notes_journal/note_masque_heureux.tscn" id="29_y0lf1"]
+[ext_resource type="Script" path="res://notes_journal/note_masque_heureux.gd" id="30_7bfoa"]
 
 [sub_resource type="Animation" id="Animation_ik6nq"]
 resource_name = "journalEntree"
@@ -89,6 +95,11 @@ offset_right = 638.0
 offset_bottom = 1196.0
 theme_override_constants/separation = 62
 
+[node name="Thierry" parent="TextureRect/VBoxContainer" instance=ExtResource("3_3vndv")]
+visible = false
+layout_mode = 2
+script = ExtResource("4_jcwul")
+
 [node name="Cham" parent="TextureRect/VBoxContainer" instance=ExtResource("3_hj3ja")]
 visible = false
 layout_mode = 2
@@ -143,6 +154,16 @@ script = ExtResource("16_n8h47")
 visible = false
 layout_mode = 2
 script = ExtResource("23_ul7al")
+
+[node name="Masque triste" parent="TextureRect/VBoxContainer" instance=ExtResource("27_0tc3v")]
+visible = false
+layout_mode = 2
+script = ExtResource("28_gkviq")
+
+[node name="Masque heureux" parent="TextureRect/VBoxContainer" instance=ExtResource("29_y0lf1")]
+visible = false
+layout_mode = 2
+script = ExtResource("30_7bfoa")
 
 [node name="Chapeau" parent="TextureRect/VBoxContainer" instance=ExtResource("14_r6bs2")]
 visible = false
